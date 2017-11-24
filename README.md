@@ -2,8 +2,14 @@
 get asiatech remaining traffic
 
 ## Installation
+* you need selenium and pyvirtualdisplay
 
-* you need to download geckodriver and copy it to /usr/local/bin/ with this command:
+```
+pip install -u selenium
+pip insstall pyvirtualdisplay
+```
+
+* and you need to download geckodriver and copy it to /usr/local/bin/ with this command:
 ```
 wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-arm7hf.tar.gz && tar -xf geckodriver-v0.19.1-arm7hf.tar.gz && rm geckodriver-v0.19.1-arm7hf.tar.gz && sudo mv geckodriver /usr/local/bin/
 ```
