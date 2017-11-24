@@ -26,6 +26,7 @@ try:
     driver.find_element_by_id('go_main').click()
 except:
     os.system('notify-send "1544.ir" "Try Again!"')
+    os.exit()
 
 elem = driver.find_element_by_id('ctl00_Content_curentGigService')
 time.sleep(5)
