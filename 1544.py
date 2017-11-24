@@ -7,7 +7,7 @@ from selenium import webdriver
 display = Display(visible=0, size=(1366, 768))
 display.start()
 
-driver = webdriver.Firefox(executable_path=r'/usr/local/bin/geckodriver')
+driver = webdriver.Firefox(executable_path='/usr/local/bin/geckodriver')
 driver.get('http://1544.ir')
 
 driver.find_element_by_id('login').click()
