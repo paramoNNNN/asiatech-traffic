@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import time
 import os
+import sys
 from pyvirtualdisplay import Display
 from selenium import webdriver
 
@@ -26,7 +27,7 @@ try:
     driver.find_element_by_id('go_main').click()
 except:
     os.system('notify-send "1544.ir" "Try Again!"')
-    os.exit()
+    sys.exit()
 
 elem = driver.find_element_by_id('ctl00_Content_curentGigService')
 time.sleep(5)
