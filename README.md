@@ -36,6 +36,6 @@ alias GetTraffic='YOUR_PATH_TO_1544.py_FILE/1544.py'
 ```
 source ~/.bashrc
 ```
-* when you enter GetTraffic into terminal script will run
+* enter GetTraffic command to run the script
 
 
