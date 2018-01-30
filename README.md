@@ -11,7 +11,7 @@ pip install pyvirtualdisplay
 
 * and you need to download geckodriver and copy it to /usr/local/bin/ with this command:
 ```
-wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-arm7hf.tar.gz && tar -xf geckodriver-v0.19.1-arm7hf.tar.gz && rm geckodriver-v0.19.1-arm7hf.tar.gz && sudo mv geckodriver /usr/local/bin/
+wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux64.tar.gz && tar -xf geckodriver-v0.19.1-arm7hf.tar.gz && rm geckodriver-v0.19.1-arm7hf.tar.gz && sudo mv geckodriver /usr/local/bin/
 ```
 * open 1544.py with any text editor
 * place your username and password
