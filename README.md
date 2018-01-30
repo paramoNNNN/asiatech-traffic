@@ -5,8 +5,8 @@ get asiatech remaining traffic
 * you need selenium and pyvirtualdisplay
 
 ```
-pip install -u selenium
-pip insstall pyvirtualdisplay
+pip install selenium
+pip install pyvirtualdisplay
 ```
 
 * and you need to download geckodriver and copy it to /usr/local/bin/ with this command:
