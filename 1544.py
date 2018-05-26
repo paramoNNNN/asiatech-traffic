@@ -28,9 +28,11 @@ driver.find_element_by_id('btnLogin').click()
 time.sleep(7)
 
 elem = driver.find_element_by_id('divGig0')
+elem2 = driver.find_element_by_id('divDay0')
 time.sleep(5)
 
-os.system('notify-send "1544.ir" ' + elem.text)
+txt = "ترافیک باقی مانده: {} \n زمان باقی مانده: {}".format(elem.text, elem2.text)
+os.system("notify-send 1544.ir \"{}{}".format(txt, '"'))
 
 driver.quit()
 display.stop()
