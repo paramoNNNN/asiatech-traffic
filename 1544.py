@@ -5,6 +5,9 @@ import sys
 from pyvirtualdisplay import Display
 from selenium import webdriver
 
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 display = Display(visible=0, size=(1366, 768))
 display.start()
 
@@ -23,16 +26,13 @@ elem.send_keys("YOUR_PASSWORD")
 
 driver.find_element_by_id('btnLogin').click()
 time.sleep(7)
-try:
-    driver.find_element_by_id('go_main').click()
-except:
-    os.system('notify-send "1544.ir" "Try Again!"')
-    sys.exit()
 
-elem = driver.find_element_by_id('ctl00_Content_curentGigService')
+elem = driver.find_element_by_id('divGig0')
+elem2 = driver.find_element_by_id('divDay0')
 time.sleep(5)
 
-os.system('notify-send "1544.ir" ' + elem.text)
+txt = "ترافیک باقی مانده: {} \n زمان باقی مانده: {}".format(elem.text, elem2.text)
+os.system("notify-send 1544.ir \"{}{}".format(txt, '"'))
 
 driver.quit()
 display.stop()
